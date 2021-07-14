@@ -1,103 +1,110 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>朱庆育｜民法典的结构和体例 | Shway&#39;s Blog</title>
-<link rel="shortcut icon" href="https://https://shwayliu.github.io//favicon.ico?v=1626276040486">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://https://shwayliu.github.io//favicon.ico?v=1626276813936">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://https://shwayliu.github.io//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="朱庆育｜民法典的结构和体例 | Shway&#39;s Blog - Atom Feed" href="https://https://shwayliu.github.io//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
-    <meta name="description" content="2020/11/17
-摘要：中国民法典的创新在于以民事权利为导向。
-民法典的两个基本范式
-我国民法典没有采纳大陆法系国家经典“三编制”或“五编制”的体系，而分为七编制，即由总则、人格权[1]合同、物权、婚姻家庭、继承、侵权责任七编组成。与德..." />
-    <meta name="keywords" content="讲座,民法典,民法" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://https://shwayliu.github.io/">
-  <img class="avatar" src="https://https://shwayliu.github.io//images/avatar.png?v=1626276040486" alt="">
-  </a>
-  <h1 class="site-title">
-    Shway&#39;s Blog
-  </h1>
-  <p class="site-description">
-    
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
-  </div>
-  <div class="social-container">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://https://shwayliu.github.io/">
+        <img class="avatar" src="https://https://shwayliu.github.io//images/avatar.png?v=1626276813936" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://https://shwayliu.github.io/">
+        <h1 class="site-title">Shway&#39;s Blog</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              朱庆育｜民法典的结构和体例
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-07-11
-              </span>
-              <span>
-                6 min read
-              </span>
-              
-                <a href="https://https://shwayliu.github.io/tag/AqLLN395z/" class="post-tag">
-                  # 讲座
-                </a>
-              
-                <a href="https://https://shwayliu.github.io/tag/OgU7rtBGH/" class="post-tag">
-                  # 民法典
-                </a>
-              
-                <a href="https://https://shwayliu.github.io/tag/p9bFO1435/" class="post-tag">
-                  # 民法
-                </a>
-              
-            </div>
+          
+          <h2 class="post-title">朱庆育｜民法典的结构和体例</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-07-11</span>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <p>2020/11/17</p>
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://https://shwayliu.github.io/tag/AqLLN395z/">
+                    讲座
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://https://shwayliu.github.io/tag/OgU7rtBGH/">
+                    民法典
+                    
+                      ，
+                    
+                  </a>
+                
+                  <a href="https://https://shwayliu.github.io/tag/p9bFO1435/">
+                    民法
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>2020/11/17</p>
 <p>摘要：中国民法典的创新在于以民事权利为导向。</p>
 <h1 id="民法典的两个基本范式">民法典的两个基本范式</h1>
 <p>我国民法典没有采纳大陆法系国家经典“三编制”或“五编制”的体系，而分为七编制，即由总则、人格权<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>合同、物权、婚姻家庭、继承、侵权责任七编组成。与德国民法典相较，增设了人格权编与侵权责任编，没有设立债法总则。民法典中人格权制度的独立成编、独特的合同中心主义<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>的确立、侵权责任独立成编、以民事权利为红线构建民法典体系<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>、采取从确权到权救济的结构，都是我国民法典的体系创新。这些都是中国民法典的重要特色，也是对世界民法典编纂的重要贡献。——王利明:《体系创新:中国民法典的特色与贡献》</p>
@@ -136,71 +143,49 @@
 </ol>
 </section>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li><a href="#%E6%B0%91%E6%B3%95%E5%85%B8%E7%9A%84%E4%B8%A4%E4%B8%AA%E5%9F%BA%E6%9C%AC%E8%8C%83%E5%BC%8F">民法典的两个基本范式</a></li>
-<li><a href="#%E4%B8%AD%E5%9B%BD%E6%B0%91%E6%B3%95%E5%85%B8%E4%B8%8E%E7%8E%B0%E6%9C%89%E8%8C%83%E5%BC%8F%E7%9A%84%E5%8C%BA%E5%88%AB">中国民法典与现有范式的区别</a></li>
-</ul>
-
-              </div>
-            </div>
-          </article>
+          </div>
         </div>
 
         
+      </div>
 
-        
+      
 
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://https://shwayliu.github.io//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
+      <div class="site-footer">
+  <div class="slogan"></div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://https://shwayliu.github.io//atom.xml" target="_blank">RSS</a>
 </div>
 
-      </div>
+
     </div>
+    <script type="application/javascript">
 
-    <script>
-      hljs.initHighlightingOnLoad()
+hljs.initHighlightingOnLoad()
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+</script>
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
   </body>
 </html>
